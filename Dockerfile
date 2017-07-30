@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y --force-yes --no-install-recommends sup
         x11vnc xvfb \
         gtk2-engines-murrine ttf-ubuntu-font-family \
         libreoffice firefox \
-        xserver-xorg-video-dummy \
+        xserver-xorg-video-dummy
 WORKDIR /usr/local
 RUN wget https://download.jetbrains.com/ruby/RubyMine-2017.2.tar.gz
 RUN tar -xvzf RubyMine-2017.2.tar.gz
