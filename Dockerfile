@@ -4,5 +4,5 @@ RUN gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A170311380
 RUN \curl -sSL https://get.rvm.io | bash -s stable
 USER root
 WORKDIR /usr/local
-wget https://download.jetbrains.com/ruby/RubyMine-2017.2.tar.gz
+RUN wget https://download.jetbrains.com/ruby/RubyMine-2017.2.tar.gz
 USER user
