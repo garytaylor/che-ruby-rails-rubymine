@@ -6,7 +6,7 @@ USER root
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --force-yes --no-install-recommends supervisor \
         net-tools \
         xfonts-base \
-        tightvncserver xvfb \
+        vnc4server xvfb \
         gtk2-engines-murrine ttf-ubuntu-font-family \
         xserver-xorg-video-dummy
 WORKDIR /usr/local
