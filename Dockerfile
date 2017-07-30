@@ -3,6 +3,7 @@ RUN gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A170311380
 
 RUN \curl -sSL https://get.rvm.io | bash -s stable
 USER root
+RUN apt-get install -y x11-xserver-utils x11vnc xvfb xterm
 WORKDIR /usr/local
 RUN wget https://download.jetbrains.com/ruby/RubyMine-2017.2.tar.gz
 RUN tar -xvzf RubyMine-2017.2.tar.gz
