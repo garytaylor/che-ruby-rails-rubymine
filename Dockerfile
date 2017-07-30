@@ -3,7 +3,7 @@ RUN gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A170311380
 
 RUN \curl -sSL https://get.rvm.io | bash -s stable
 USER root
-RUN apt-get update && apt-get install -y --force-yes --no-install-recommends supervisor \
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --force-yes --no-install-recommends supervisor \
         net-tools \
         x11vnc xvfb \
         gtk2-engines-murrine ttf-ubuntu-font-family \
