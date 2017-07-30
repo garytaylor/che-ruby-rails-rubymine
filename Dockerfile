@@ -7,7 +7,6 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --force-
         net-tools \
         x11vnc xvfb \
         gtk2-engines-murrine ttf-ubuntu-font-family \
-        libreoffice firefox \
         xserver-xorg-video-dummy
 WORKDIR /usr/local
 RUN wget https://download.jetbrains.com/ruby/RubyMine-2017.2.tar.gz
