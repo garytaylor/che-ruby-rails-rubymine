@@ -3,7 +3,7 @@ RUN gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A170311380
 
 RUN \curl -sSL https://get.rvm.io | bash -s stable
 USER root
-RUN apt-get install -y xvfb x11vnc openbox firefox
+RUN apt-get update && apt-get install -y xvfb x11vnc openbox firefox
 # Setup a password for vnc
 RUN mkdir /.vnc
 RUN x11vnc -storepasswd vncpassword ~/.vnc/passwd
